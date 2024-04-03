@@ -80,7 +80,7 @@ public class Main {
 	public static void playGame(TicTacToe ticTacToe) {
 		do {
 		    System.out.println("\n"+ ticTacToe.toString());
-		    System.out.printf("\n%s informe sua jogada", ticTacToe.getCurrentUser().getNickName());
+		    System.out.printf("\n%s informe sua jogada!\n", ticTacToe.getCurrentUser().getNickName());
 		    char mark = sc.next().charAt(0);
 		    ticTacToe.markMove(mark);
 		} while (!gameOver(ticTacToe));
