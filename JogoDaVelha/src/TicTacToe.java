@@ -62,14 +62,14 @@ public class TicTacToe {
 			return true;
 
 		}
-		if (board[2][2] == board[1][1] && board[1][1] == board[0][0]) {
+		if (board[2][0] == board[1][1] && board[1][1] == board[0][2]) {
 			return true;
 
 		}
 		return false;
 
 	}
-
+	
 	public boolean isBoardFull() {
 		for (int i = 0; i < board.length; i++) {
 			for (int j = 0; j < board[i].length; j++) {
